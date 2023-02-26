@@ -1,107 +1,88 @@
 const Footer = () => {
   return (
-    <footer className="mastfoot pb-5 bg-white section-padding pb-0">
-      <div className="inner container">
-        <div className="row">
-          <div className="col-lg-4">
-            <div className="footer-widget pr-lg-5 pr-0">
-              <picture>
-                <img
-                  src="/static/img/logo.png"
-                  className="img-fluid footer-logo mb-3"
-                  alt=""
-                />
-              </picture>
+    <>
+      <section className="info_section layout_padding-top">
+        <div className="info_logo-box">
+          <h2>Fanadesh</h2>
+        </div>
+        <div className="container layout_padding2">
+          <div className="row">
+            <div className="col-md-3">
+              <h5>About Us</h5>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
-                obcaecati quisquam id sit omnis explicabo voluptate aut placeat,
-                soluta, nisi ea magni facere, itaque incidunt modi? Magni, et
-                voluptatum dolorem.
+                dolor sit amet, consectetur magna aliqua. Ut enim ad minim
+                veniam, quisdotempor incididunt r
               </p>
-              <nav className="nav nav-mastfoot justify-content-start">
-                <a className="nav-link" href="#">
-                  <i className="fab fa-facebook-f"></i>
-                </a>
-                <a className="nav-link" href="#">
-                  <i className="fab fa-twitter"></i>
-                </a>
-                <a className="nav-link" href="#">
-                  <i className="fab fa-instagram"></i>
-                </a>
-              </nav>
             </div>
-          </div>
-          <div className="col-lg-4">
-            <div className="footer-widget px-lg-5 px-0">
-              <h4>Open Hours</h4>
-              <ul className="list-unstyled open-hours">
-                <li className="d-flex justify-content-between">
-                  <span>Monday</span>
-                  <span>9:00 - 24:00</span>
+            <div className="col-md-3">
+              <h5>Useful Link</h5>
+              <ul>
+                <li>
+                  <a href="">Video games</a>
                 </li>
-                <li className="d-flex justify-content-between">
-                  <span>Tuesday</span>
-                  <span>9:00 - 24:00</span>
+                <li>
+                  <a href="">Remote control</a>
                 </li>
-                <li className="d-flex justify-content-between">
-                  <span>Wednesday</span>
-                  <span>9:00 - 24:00</span>
-                </li>
-                <li className="d-flex justify-content-between">
-                  <span>Thursday</span>
-                  <span>9:00 - 24:00</span>
-                </li>
-                <li className="d-flex justify-content-between">
-                  <span>Friday</span>
-                  <span>9:00 - 02:00</span>
-                </li>
-                <li className="d-flex justify-content-between">
-                  <span>Saturday</span>
-                  <span>9:00 - 02:00</span>
-                </li>
-                <li className="d-flex justify-content-between">
-                  <span>Sunday</span>
-                  <span> Closed</span>
+                <li>
+                  <a href="">3d controller</a>
                 </li>
               </ul>
             </div>
-          </div>
-
-          <div className="col-lg-4">
-            <div className="footer-widget pl-lg-5 pl-0">
-              <h4>Newsletter</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-              <form id="newsletter">
-                <div className="form-group">
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="emailNewsletter"
-                    aria-describedby="emailNewsletter"
-                    placeholder="Enter email"
-                  />
+            <div className="col-md-3">
+              <h5>Contact Us</h5>
+              <p>
+                dolor sit amet, consectetur magna aliqua. quisdotempor
+                incididunt ut e
+              </p>
+            </div>
+            <div className="col-md-3">
+              <div className="subscribe_container">
+                <h5>Newsletter</h5>
+                <div className="form_container">
+                  <form action="">
+                    <input type="email" placeholder="Enter your email" />
+                    <button type="submit">Subscribe</button>
+                  </form>
                 </div>
-                <button type="submit" className="btn btn-primary w-100">
-                  Submit
-                </button>
-              </form>
+              </div>
             </div>
           </div>
-          <div className="col-md-12 d-flex align-items-center">
-            <p className="mx-auto text-center mb-0">
-              Copyright 2019. All Right Reserved. Design by{" "}
-              <a
-                href="https://gettemplates.co"
-                target="_blank"
-                rel="noreferrer"
-              >
-                GetTemplates
+        </div>
+        <div className="container">
+          <div className="social_container">
+            <div className="social-box">
+              <a href="">
+                <picture>
+                  <img src="/static/images/fb.png" alt="" />
+                </picture>
               </a>
-            </p>
+
+              <a href="">
+                <picture>
+                  <img src="/static/images/twitter.png" alt="" />
+                </picture>
+              </a>
+              <a href="">
+                <picture>
+                  <img src="/static/images/linkedin.png" alt="" />
+                </picture>
+              </a>
+              <a href="">
+                <picture>
+                  <img src="/static/images/instagram.png" alt="" />
+                </picture>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </section>
+      <footer className="container-fluid footer_section">
+        <p>
+          Copyright &copy; 2019 All Rights Reserved By
+          <a href="https://html.design/">Free Html Templates</a>
+        </p>
+      </footer>
+    </>
   );
 };
 
