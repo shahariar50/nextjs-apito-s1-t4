@@ -1,22 +1,15 @@
 import MainLayout from "components/layout/MainLayout";
 
-const about = () => {
+const AdmissionPage = () => {
   return (
     <MainLayout>
       <div className="common_style">
-        <section className="about_section">
+        <section className="admission_section">
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <div className="about_img-container">
-                  <picture>
-                    <img src="/static/images/about.png" alt="" />
-                  </picture>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="about_detail-box">
-                  <h3>About our School</h3>
+                <div className="admission_detail-box">
+                  <h3>Admission open</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -31,6 +24,13 @@ const about = () => {
                   </div>
                 </div>
               </div>
+              <div className="col-md-6">
+                <div className="admission_img-container">
+                  <picture>
+                    <img src="/static/images/admission.png" alt="" />
+                  </picture>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -39,4 +39,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default AdmissionPage;

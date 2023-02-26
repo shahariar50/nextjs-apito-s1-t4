@@ -3,12 +3,16 @@ import Header from "./Header";
 
 type mainLayoutProps = {
   children: React.ReactNode;
+  headerPosition?: boolean;
 };
 
-const MainLayout: React.FC<mainLayoutProps> = ({ children }) => {
+const MainLayout: React.FC<mainLayoutProps> = ({
+  children,
+  headerPosition,
+}) => {
   return (
     <>
-      <Header />
+      <Header headerPosition={headerPosition} />
       {children}
       <Footer />
     </>

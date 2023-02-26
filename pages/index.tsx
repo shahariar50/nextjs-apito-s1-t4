@@ -9,7 +9,7 @@ import WhySection from "components/page/homepage/WhySection";
 
 export default function Home() {
   return (
-    <MainLayout>
+    <MainLayout headerPosition={true}>
       <HeroSection />
       <div className="common_style">
         <AboutSection />

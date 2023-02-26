@@ -1,6 +1,16 @@
-const Header = () => {
+import Link from "next/link";
+
+type HeaderProps = { headerPosition?: boolean };
+
+const Header: React.FC<HeaderProps> = ({ headerPosition }) => {
   return (
-    <header className="header_section">
+    <header
+      className="header_section"
+      style={{
+        position: headerPosition ? "absolute" : "static",
+        backgroundColor: headerPosition ? "" : "#fdd31d",
+      }}
+    >
       <div className="container">
         <nav className="navbar navbar-expand-lg custom_nav-container ">
           <a className="navbar-brand" href="index.html">
@@ -22,36 +32,32 @@ const Header = () => {
             <div className="d-flex ml-auto flex-column flex-lg-row align-items-center">
               <ul className="navbar-nav  ">
                 <li className="nav-item active">
-                  <a className="nav-link" href="index.html">
-                    {" "}
+                  <Link className="nav-link" href="/">
                     Home <span className="sr-only">(current)</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item ">
-                  <a className="nav-link" href="about.html">
-                    {" "}
-                    About{" "}
-                  </a>
+                  <Link className="nav-link" href="/about">
+                    About
+                  </Link>
                 </li>
 
                 <li className="nav-item ">
-                  <a className="nav-link" href="admission.html">
-                    {" "}
-                    Admission{" "}
-                  </a>
+                  <Link className="nav-link" href="/admission">
+                    Admission
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="why.html">
-                    {" "}
-                    Why Us{" "}
-                  </a>
+                  <Link className="nav-link" href="/why">
+                    Why Us
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link" href="contact.html">
+                  <Link className="nav-link" href="/contact">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

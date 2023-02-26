@@ -1,22 +1,22 @@
 import MainLayout from "components/layout/MainLayout";
 
-const about = () => {
+const WhyPage = () => {
   return (
     <MainLayout>
       <div className="common_style">
-        <section className="about_section">
+        <section className="why_section">
           <div className="container">
             <div className="row">
               <div className="col-md-6">
-                <div className="about_img-container">
+                <div className="why_img-container">
                   <picture>
-                    <img src="/static/images/about.png" alt="" />
+                    <img src="/static/images/why.png" alt="" />
                   </picture>
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="about_detail-box">
-                  <h3>About our School</h3>
+                <div className="why_detail-box">
+                  <h3>Why learn on Fanadesh</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -39,4 +39,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default WhyPage;
