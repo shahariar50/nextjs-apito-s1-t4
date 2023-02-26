@@ -1,13 +1,10 @@
 import MainLayout from "components/layout/MainLayout";
 import AboutSection from "components/page/homepage/AboutSection";
 import AdmissionSection from "components/page/homepage/AdmissionSection";
+import ClientSection from "components/page/homepage/Clientsection";
+import DetermineSection from "components/page/homepage/DetermineSection";
 import HeroSection from "components/page/homepage/HeroSection";
-import MenuSection from "components/page/homepage/MenuSection";
-import ReservationSection from "components/page/homepage/ReservationSection";
-import SpecialDishesSection from "components/page/homepage/SpecialDishesSection";
-import TeamSection from "components/page/homepage/TeamSection";
-import TestemonialSection from "components/page/homepage/TestemonialSection";
-import WelcomeSection from "components/page/homepage/WelcomeSection";
+import WhySection from "components/page/homepage/WhySection";
 
 export default function Home() {
   return (
@@ -16,13 +13,10 @@ export default function Home() {
       <div className="common_style">
         <AboutSection />
         <AdmissionSection />
+        <WhySection />
+        <DetermineSection />
       </div>
-      <WelcomeSection />
-      <SpecialDishesSection />
-      <MenuSection />
-      <TestemonialSection />
-      <TeamSection />
-      <ReservationSection />
+      <ClientSection />
     </MainLayout>
   );
 }
