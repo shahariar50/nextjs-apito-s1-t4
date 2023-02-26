@@ -1,4 +1,6 @@
 import MainLayout from "components/layout/MainLayout";
+import AboutSection from "components/page/homepage/AboutSection";
+import AdmissionSection from "components/page/homepage/AdmissionSection";
 import HeroSection from "components/page/homepage/HeroSection";
 import MenuSection from "components/page/homepage/MenuSection";
 import ReservationSection from "components/page/homepage/ReservationSection";
@@ -11,6 +13,10 @@ export default function Home() {
   return (
     <MainLayout>
       <HeroSection />
+      <div className="common_style">
+        <AboutSection />
+        <AdmissionSection />
+      </div>
       <WelcomeSection />
       <SpecialDishesSection />
       <MenuSection />
